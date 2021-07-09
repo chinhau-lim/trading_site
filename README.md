@@ -1,4 +1,4 @@
-# Investing Done Right Stock Simulator
+# Stock Simulator that Recommends Stocks For You!
 
 ### Introduction
 
