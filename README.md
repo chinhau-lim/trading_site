@@ -35,4 +35,17 @@ Here's a stock simulator that recommend stocks for users on a daily basis implem
     - Feedback_Upvotes Table  
       - Columns: UFID, Username 
 
+### Website Pages
+
+  - Create Account Page
+  - Login Page
+  - Historical Page
+    - Shows all of the historical stocks data (filtered by stock earnings release dates) 
+  - Stock Picks by Price/Percentage
+    - Recommends companies that just release their earnings & have the potential to recover from their previous market overreaction.
+  - User Main Page
+    - Watchlist + Currently Purchased Stocks 
+  - Feature Upvote Page
+  - Philosophy Page
+
 
