@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>Investing Done Right.</title>
+         <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js" type="text/javascript"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+            <link rel="stylesheet" href="responsive-menu.min.css">
+            <script src="responsive-menu.js"></script>
+            <script src="jquery.min.js"></script>
+            <script src="dist/jquery.upvote.js"></script>
+            <link rel="stylesheet" href="dist/jquery.upvote.css">
+
+    </head>
+
+
+    <style>
+
+        .subtitle { position: absolute; top: 135px; left: 680px; }
+
+        .nav-button { height: 1.5rem; width: 2.2rem; background-color: transparent;
+                      background-image: linear-gradient(to right, currentColor, currentColor);
+                      background-position: center; background-repeat: no-repeat;
+                      background-size: 100% 5px; padding: 0; outline: 0; border: 0;
+                      color: #333; cursor: pointer;
+                      -webkit-tap-highlight-color: transparent;
+                      transition: .25s cubic-bezier(.17,.67,.89,1.4);
+                      transition-property: transform;
+                      will-change: transform;
+                    }
+
+        .nav-button::before,
+
+        .nav-button::after { content: "";
+                             position: absolute;
+                             left: 0; right: 0;
+                             display: block;
+                             height: 5px;
+                             background: currentColor;
+                             transition: .25s;
+                             transition-property: transform, top;
+                             will-change: transform, top;
+                            }
+
+        .nav-button::before { top: 0; }
+        .nav-button::after { top: calc(100% - 4px); }
+
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+
+        .dropdown {
+                    position: absolute; top: 15px; right: 20px;
+                    display: inline-block;
+                  }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 33px; right: 0px;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          text-align:right;
+          font-size: 15px;
+          color: #75818E;font-family: Optima;
+          padding: 8px 3px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .show {display: block;}
+
+        div.blocks {
+            position: absolute;
+            top: 250px; right: 50px;
+            width:600px; overflow-y:scroll;
+            height: 350px;
+        }
+
+        .table-scroll2{
+            /*width:100%; */
+            display: block;
+            empty-cells: show;
+            table-layout:fixed;
+  
+            /* Decoration */
+            border-spacing: 1px;
+            width: 600px;
+            height: 400px;
+
+            position: absolute;
+            top: 260px; right: 40px;
+        }
+
+        .table-scroll2 tbody{
+          /* Position */
+          display: block; position:relative;
+          width:600px; overflow-y:scroll;
+          height: 400px;
+          /* Decoration */
+          text-align:center;
+          border-top: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .table-scroll2 tr{
+          width: 100s0px;
+          display:flex;
+          text-align:center;
+        }
+
+        .table-scroll2 td,.table-scroll2 th{
+          flex-basis:100%;
+          flex-grow:2;
+          display: block;
+          padding: 1rem;
+          text-align:center;
+        }
+
+        .table-scroll2.small-first-col td:first-child,
+        .table-scroll2.small-first-col th:first-child{
+          flex-basis:20%;
+          flex-grow:1;
+          text-align:center;
+        }
+
+        .table-scroll2 tbody tr:nth-child(2n){
+          background-color: rgba(130,130,170,0.1);
+          text-align:center;
+        }
+
+        .arrow-up {
+            position: relative;
+            top: 3px;
+            right: 2px;
+            height: 3px;
+            width: 3px;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #1D8348;
+        }
+        
+        h3.votes {
+            top: 1px;
+            right: 100px;
+            height: 3px;
+            width: 3px;
+            font-size: 20px;
+            color: #1D8348;
+        }
+
+
+
+    </style>
+
+    <body>  
+
+        <!-- 1. Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %} 
+            <div class="alert alert-{{ category }}">
+                {{message}}
+            </div>
+            {% endfor %}
+        {% endwith %}
+
+
+        <!-- Dropdown Menu -->
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show"); }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.nav-button')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }       
+                    }
+                }
+            }
+        </script>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="nav-button">
+            </button>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/portfolio/None/"> User Home </a>
+                    <a href="/stock_pick_price/"> Stock Picks | $ </a>
+                    <a href="/stock_pick_percentage/"> Stock Picks | % </a>
+                    <a href="/history/"> Historical Data </a>
+                    <a href="/accounts/logout/"> Logout </a>
+                </div>
+        </div>
+
+
+        <h1 style='font-size: 80px; text-align: center; position:absolute; top: 40px; left:290px;' > &#8212; Feature Upvote &#8212; </h1>
+        
+        <div class="subtitle">
+            <p style='font-size: 15px'> @ Year 2021 Swing Trading Edition. </p>
+        </div>  
+
+        <!-- Features Upvote Suggestion -->
+        <form action="" method="post" enctype="multipart/form-data">
+            <h3 style="position: absolute; font-size: 15px; top: 235px; left: 85px;">
+                TITLE
+            </h3>
+            <input type="text" name="title" placeholder="" style='position: absolute; font-size: 18px; top: 260px; left: 80px; width: 500px; height:50px;text-align: left;'/> <br/>
+
+            <h3 style="position: absolute; font-size: 15px; top: 325px; left: 85px;">
+                DESCRIPTION
+            </h3>
+
+            <textarea name="comments" placeholder="" style='position: absolute; font-size: 18px; top: 350px; left: 80px; width: 500px; height:200px;text-align: left; vertical-align: text-top;'/> </textarea>
+
+            <input type="submit" value="Post Suggestion" style='position: absolute; font-size: 15px; top: 570px; left:  440px; width: 140px; height: 35px;text-align: center;'/>
+        </form>
+
+        <h3 style="position: absolute; font-size: 25px; top: 215px; right: 310px; color: #75818E;">
+            FEATURE SUGGESTION LIST
+        </h3>
+
+
+        <!-- Features Upvote Suggestion -->
+           
+        <table class="table-scroll2 small-first-col">
+            <tbody class="body-half-screen">
+
+                {% for feed in feedback %}
+                    <tr>
+                        <form action="" method="post"  enctype="multipart/form-data"> 
+                        
+                            <td style="text-align: center;" > 
+
+                                <input type="hidden" name="upvote" value={{ feed[0] }}> </input>
+
+                                <h1 style="font-size:20px; text-align:left; width:350px;">   {{ feed[1] }} </h1>
+
+                            <input type="submit" value="▲ {{ feed[3] }} " style='            position: relative; top: -8%;  right: -34%; height:40px; width:100px; color:#17A955; font-size:18px;'/>
+
+                            <h5 style="font-size:16px; text-align:left;opacity: 0.7;font-family: Optima, sans-serif; position: relative; top: 0%;  left: 0%;"> 
+                            {{ feed[2] }}
+                            </h5>
+                            </td>
+                        </form>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </body>
+    
+</html>

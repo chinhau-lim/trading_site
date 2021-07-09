@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>Investing Done Right.</title>
+        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js" type="text/javascript"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <link rel="stylesheet" href="responsive-menu.min.css">
+        <script src="responsive-menu.js"></script>
+    </head>
+
+
+    <style>
+        label { font-size: 19px; }
+
+        input { font-size: 14px; }
+
+        .sd-container1 { position: absolute; top: 210px; left: 280px; }
+
+        .sd-container2 { position: absolute; top: 210px; left: 620px; }
+
+        .submit-container { position: absolute; top: 210px; left: 950px; }
+
+        .date-title { position: absolute; top: 310px; left: 430px; }
+
+
+
+
+        .sd-container3 { position: absolute; top: 1000px; left: 60px; }
+
+
+
+        .sd {
+          border: 1px solid #1cbaa5;
+          padding: 5px 10px;
+          height: 30px;
+          width: 150px;
+        }
+
+        .open-button {
+          position: absolute;
+          top: 10px;
+          right: 3px;
+          width: 25px;
+          height: 25px;
+          background: #fff;
+          pointer-events: none;
+        }
+
+        .open-button button {
+          border: none;
+          background: transparent;
+        }
+
+        .subtitle {
+            position: absolute;
+            top: 135px;
+            left: 670px;
+        }
+
+        .res1 {
+            position: absolute;
+            top: 370px;
+            left: 100px;
+        }
+
+        .res2 {
+            position: absolute;
+            top: 370px;
+            left: 520px;
+        }
+
+        .res3 {
+            position: absolute;
+            top: 370px;
+            left: 950px;
+        }
+
+        h4.rh1 {
+            position: absolute;
+            top: 240px;
+            left: 75px;
+            font-size: 25px;
+            font-family: Georgia;
+            color:#E41313;
+        }
+
+        h4.rh2 {
+            position: absolute;
+            top: 240px;
+            left: 90px;
+            font-size: 23px;
+            font-family: Georgia;
+            color:#FFD800;
+        }
+
+        h4.rh3 {
+            position: absolute;
+            top: 240px;
+            left: 85px;
+            font-size: 23px;
+            font-family: Georgia;  
+            color:#05C01E;      
+        }
+
+        h3.dates {
+            font-size: 30px;
+        }
+
+        input.search {
+            width: 160px; height: 35px;
+        }
+
+        canvas.c1 {
+            position: absolute;
+            top: 780px;
+            left: 85px;
+        }
+
+        canvas.c2 {
+            position: absolute;
+            top: 1280px;
+            left: 85px;
+        }
+
+        div.div1 {
+            position: absolute; top: 910px; left: 150px;
+            width: 30px; height: 20px;
+            border: 0.5px solid black;
+            box-sizing: border-box; 
+            background-color: rgba(221, 227, 234, 1);
+        }
+
+        div.div2 {
+            position: absolute; top: 880px; left: 150px;
+            width: 30px; height: 20px;
+            border: 0.5px solid black;
+            box-sizing: border-box; 
+            background-color: rgba(49, 85, 122, 1);
+        }
+
+        div.div3 {
+            position: absolute; top: 1420px; left: 150px;
+            width: 30px; height: 20px;
+            border: 0.5px solid black;
+            box-sizing: border-box; 
+            background-color: rgba(221, 227, 234, 1);
+        }
+
+        div.div4 {
+            position: absolute; top: 1395px; left: 150px;
+            width: 30px; height: 20px;
+            border: 0.5px solid black;
+            box-sizing: border-box; 
+            background-color: rgba(49, 85, 122, 1);
+        }
+
+
+        .nav-button { height: 1.5rem; width: 2.2rem; background-color: transparent;
+                      background-image: linear-gradient(to right, currentColor, currentColor);
+                      background-position: center; background-repeat: no-repeat;
+                      background-size: 100% 5px; padding: 0; outline: 0; border: 0;
+                      color: #333; cursor: pointer;
+                      -webkit-tap-highlight-color: transparent;
+                      transition: .25s cubic-bezier(.17,.67,.89,1.4);
+                      transition-property: transform;
+                      will-change: transform;
+                    }
+
+        .nav-button::before,
+
+        .nav-button::after { content: "";
+                             position: absolute;
+                             left: 0; right: 0;
+                             display: block;
+                             height: 5px;
+                             background: currentColor;
+                             transition: .25s;
+                             transition-property: transform, top;
+                             will-change: transform, top;
+                            }
+
+        .nav-button::before { top: 0; }
+        .nav-button::after { top: calc(100% - 4px); }
+
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+
+        .dropdown {
+                    position: absolute; top: 15px; right: 20px;
+                    display: inline-block;
+                  }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 33px; right: 0px;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          text-align:right;
+          font-size: 15px;
+          color: #75818E;font-family: Optima;
+          padding: 8px 3px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .show {display: block;}
+
+    </style>
+
+    <body>  
+
+        <!-- 1. Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %} 
+            <div class="alert alert-{{ category }}">
+                {{message}}
+            </div>
+            {% endfor %}
+        {% endwith %}
+
+        <!-- 2. Dropdown Menu -->
+        <script> 
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show"); }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.nav-button')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }       
+                    }
+                }
+            }
+        </script>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="nav-button">
+            </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/portfolio/None/"> User Home </a>
+                    <a href="/stock_pick_price/"> Stock Picks | $ </a>
+                    <a href="/stock_pick_percentage/"> Stock Picks | % </a>
+                    <a href="/philosophy/"> Philosophy </a>
+                    <a href='/feedback/'> User Feedback </a>
+                    <a href="/accounts/logout/"> Logout </a>
+                </div>
+        </div>
+
+        <!-- 3. Title -->
+        <h1 style='position: absolute; top: 50px; left: 300px;font-size: 80px; text-align: center;' > 
+
+            &#8212; Historical Data &#8212; 
+        </h1>
+        <div class="subtitle">
+
+            <p style='font-size: 15px'> @ Year 2021 Swing Trading Edition. </p>
+        </div>
+
+
+        <!-- 4. Date Filter -->
+        <form action="" method="post" enctype="multipart/form-data">  
+            <div class="sd-container1">
+                <label for="start_date" style='font-size: 17px;font-family: Georgia;'> START DATE &nbsp;
+                    <input class="sd" type="date" id="d1" name="start_date" min="2021-01-01" style="width: 180px;" max={{ md3 }}>
+                </label>
+            </div>
+            <div class="sd-container2">
+                <label for="end_date" style='font-size: 17px;font-family: Georgia;'> END DATE &nbsp;
+                    <input class="sd" type="date" id="d2" name="end_date" min="2021-01-02" style="width: 180px;" max={{ md3 }}>
+                </label>
+            </div>
+            <div class="submit-container">
+                <input type="submit" value="search" class="search">
+            </div>
+        </form>
+
+
+        <!-- 5. Current Date Range -->
+        <div class = "date-title">
+
+            <h3 class="dates" style='font-size: 32px'> {{ md1 }} &nbsp;&nbsp;  ⟶ &nbsp;&nbsp; {{ md2 }}</h3> 
+        </div>
+
+
+        <!-- 6. Current Stock Stats -->
+        <div class = "res1">
+            <p class="r1"> 
+                <h1 style="font-size:150px; color:#E41313;"> {{ v1 }} </h1>
+                <h4 class="rh1"> LOSS </h4>
+            </p>
+        </div>
+
+        <div class = "res2">
+            <p class="r2"> 
+                <h1 style="font-size:150px; color:#FFD800;"> {{ v2 }} </h1>
+                <h4 class="rh2"> FLAT </h4>
+            </p>
+        </div>
+
+        <div class = "res3">
+            <p class="r3"> 
+                <h1 style="font-size:150px; color:#05C01E;"> {{ v3 }} </h1>
+                <h4 class="rh3"> GAIN </h4>
+            </p>
+        </div>
+        
+
+        <!-- 7. Extra Info / Legends -->
+        <h5 style="position: absolute; font-size:15px; top: 650px; left: 540px; color: #75818E;"> 
+        ** Flat includes stocks &#177;  $0.09 </h5>
+
+        <h5 style="position: absolute; top: 910px;  color: #75818E; left: 180px; font-size:18px;">
+            &nbsp; &lt; $10 
+        </h5>
+
+        <h5 style="position: absolute; top: 880px;  color: #75818E; left: 180px; font-size:18px;">
+            &nbsp; &#8805; $10 
+        </h5>
+
+        <h5 style="position: absolute; top: 1420px;  color: #75818E; left: 180px; font-size:18px;">
+            &nbsp; &lt; 10% 
+        </h5>
+
+        <h5 style="position: absolute; top: 1395px;  color: #75818E; left: 180px; font-size:18px;">
+            &nbsp; &#8805; 10% 
+        </h5>
+
+        <div class="div1"> </div>
+        <div class="div2"> </div>
+        <div class="div3"> </div>
+        <div class="div4"> </div>
+        
+
+        <!-- 7. Bar Charts Scripts -->
+        <canvas id="classOne" class="c1" width="1100" height="450"></canvas>
+        <canvas id="classTwo" class="c2" width="1100" height="450"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script>         
+            var labelOne = {{ a01 | safe }}
+            var dataOne = {{ b01 | safe }}
+            var labelTwo = {{ a02 | safe }}
+            var dataTwo = {{ b02 | safe }}
+
+            var chartOne = new Chart(document.getElementById('classOne').getContext('2d'),
+                {   type: 'bar',
+                    data: {
+                        labels: {{ a01 | safe }},
+                        datasets: [{label: 'Gains ($)', data: {{ b01 | safe}},
+                        backgroundColor: {{e01 | safe}}, }]
+                    },
+                    options: {
+                            onClick: function(e){
+                                var activePoints = chartOne.getElementsAtEvent(e);
+                            window.open("https://finance.yahoo.com/quote/" + chartOne.data.labels[activePoints[0]._index])
+                            },
+                            responsive: false,
+                            title: {display: true,
+                                    text: 'Top {{ d01 }} Stock Gainers by Values ($)',
+                                    fontSize: 30,
+                                    },
+                            tooltips: {
+                                mode: 'index',
+                                intersect: true },
+                            hover: {
+                                mode: 'index',
+                                intersect: true },
+                            scales: {
+                                xAxes: [{
+                                    gridLines: {
+                                        drawOnChartArea: false
+                                    }
+                                }],
+                                yAxes: [{
+                                    gridLines: {
+                                        drawOnChartArea: false
+                                    }
+                                }]
+                            }
+                             },
+                    });
+            var chartTwo = new Chart(document.getElementById('classTwo').getContext('2d'),
+                {   type: 'bar',
+                    data: {
+                        labels: {{ a02 | safe }},
+                        datasets: [{label: 'Gains (%)', data: {{ b02 | safe}}, backgroundColor: {{e02 | safe}} },]
+                    },
+                    options: {
+                            onClick: function(e){
+                                var activePoints2 = chartTwo.getElementsAtEvent(e);
+
+                            window.open("https://finance.yahoo.com/quote/" + chartTwo.data.labels[activePoints2[0]._index])
+
+                            },
+                            responsive: false,
+                            title: {display: true,
+                                    text: 'Top {{ d02 }} Stock Gainers by Percentages (%)',
+                                    fontSize: 30,
+                                    },
+                            tooltips: {
+                                mode: 'index',
+                                intersect: true },
+                            hover: {
+                                mode: 'index',
+                                intersect: true },
+                            scales: {
+                                xAxes: [{
+                                    gridLines: {
+                                        drawOnChartArea: false
+                                    }
+                                }],
+                                yAxes: [{
+                                    gridLines: {
+                                        drawOnChartArea: false
+                                    }
+                                }]
+                            }
+                             }
+                    });
+        </script>
+
+
+    </body>
+    
+</html>

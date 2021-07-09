@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Investing Done Right.</title>
+         <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js" type="text/javascript"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+            <link rel="stylesheet" href="responsive-menu.min.css">
+            <script src="responsive-menu.js"></script>
+    </head>
+
+    <style>
+        
+        div.style_00 { position: absolute; top: 45px; right: 250px; }
+        div.style_01 { position: absolute; top: 115px; right: 320px; }
+        div.style_02 { position:absolute; top:150px; right:25px; height:570px; width:210px;
+                       box-shadow: rgba(100, 100, 111, 0.5) 0px 17px 59px 0px;}
+        canvas.style_03 { position: absolute; top: 160px; left: 60px;}
+        label.style_04 { position: absolute; top: 770px; left: 100px; }
+
+        div.style_05 { position: absolute; top: 815px; left: 100px; }
+        select.style_06 { position: absolute; top: 768px; left: 290px; }
+
+        input.style_07  {   -webkit-box-shadow: inset 0 9px 12px rgba(0, 0, 0, 0.25),
+                            0 1px 2px rgba(0, 0, 0, 0.05);
+                            -moz-box-shadow: inset 0 9px 12px rgba(0, 0, 0, 0.25),
+                            0 1px 2px rgba(0, 0, 0, 0.05);
+                            box-shadow: inset 0 9px 12px rgba(0, 0, 0, 0.25),
+                            0 1px 2px rgba(0, 0, 0, 0.05); 
+                        }
+
+        .nav-button { height: 1.5rem; width: 2.2rem; background-color: transparent;
+                      background-image: linear-gradient(to right, currentColor, currentColor);
+                      background-position: center; background-repeat: no-repeat;
+                      background-size: 100% 5px; padding: 0; outline: 0; border: 0;
+                      color: #333; cursor: pointer;
+                      -webkit-tap-highlight-color: transparent;
+                      transition: .25s cubic-bezier(.17,.67,.89,1.4);
+                      transition-property: transform;
+                      will-change: transform;
+                    }
+
+        .nav-button::before,
+
+        .nav-button::after { content: "";
+                             position: absolute;
+                             left: 0; right: 0;
+                             display: block;
+                             height: 5px;
+                             background: currentColor;
+                             transition: .25s;
+                             transition-property: transform, top;
+                             will-change: transform, top;
+                            }
+
+        .nav-button::before { top: 0; }
+        .nav-button::after { top: calc(100% - 4px); }
+
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+
+        .dropdown {
+                    position: absolute; top: 15px; right: 20px;
+                    display: inline-block;
+                  }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 33px; right: 0px;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          text-align:right;
+          font-size: 15px;
+          color: #75818E;font-family: Optima;
+          padding: 8px 3px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .show { display: block; }
+
+        div.color1 {
+            position: absolute; top: 280px; left: 150px;
+            width: 30px; height: 20px;
+            border: 0.5px solid black;
+            box-sizing: border-box; 
+            background-color: rgba(169, 20, 20, 1);
+        }
+
+        div.color2 {
+            position: absolute; top: 305px; left: 150px;
+            width: 30px; height: 20px;
+            border: 0.5px solid black;
+            box-sizing: border-box; 
+            background-color: rgba(222, 111, 111, 1);
+        }
+
+        div.color3 {
+            position: absolute; top: 330px; left: 150px;
+            width: 30px; height: 20px;
+            border: 0.5px solid black;
+            box-sizing: border-box; 
+            background-color: rgba(221, 227, 234, 1);
+        }
+
+    </style>
+
+    <body>
+        
+        <div class="color1"> </div>
+        <div class="color2"> </div>
+        <div class="color3"> </div>
+
+        <h5 style="position: absolute; font-size: 12px; top: 280px;  color: #75818E; left: 186px;">
+            &#8805; {{ v_07[0] }}
+        </h5>
+
+        <h5 style="position: absolute; font-size: 12px; top: 307px;  color: #75818E; left: 186px;">
+           {{ v_07[1] }} - {{ v_07[0] }}
+        </h5>
+
+        <h5 style="position: absolute; font-size: 12px; top: 333px;  color: #75818E; left: 186px;">
+            &#8804; {{ v_07[1] }}
+        </h5>
+
+        <!-- 1. Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %} 
+            <div class="alert alert-{{ category }}">
+                {{message}}
+            </div>
+            {% endfor %}
+        {% endwith %}
+
+        <script>
+            
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show"); }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.nav-button')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }       
+                    }
+                }
+            }
+        </script>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="nav-button">
+            </button>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/portfolio/None/"> User Home </a>
+                    <a href="/stock_pick_price/"> Stock Picks | $ </a>
+                    <a href="/stock_pick_percentage/"> Stock Picks | % </a>
+                    <a href="/history/"> Historical Data </a>
+                    <a href="/philosophy/"> Philosophy </a>
+                    <a href='/feedback/'> User Feedback </a>
+                    <a href="/accounts/logout/"> Logout </a>
+                </div>
+        </div>
+
+        <!-- 2. Title -->
+        <div class="style_00">
+        <h1 style='font-size:60px; text-align:center;'> &#8212; Stock Recommendations &#8212; </h1>
+        </div>
+        
+        <div class="style_01">
+        <p style='font-size: 15px'> @ Year 2021 Swing Trading Edition. </p>
+        </div>
+
+        <!-- 3. Personal Stats -->
+        <div class="style_02">
+            </br>
+            <h1 style='text-align: center; font-size: 28px; color: #75818E;'> 
+            &#8212; STATS &#8212; </h1>
+                </br>
+            <div style='text-align: center;font-size: 22px;line-height: 0.7;color: #75818E;'> Total Earnings</div></br>
+            <div style='text-align: center;font-size: 40px;line-height: 0.7;font-weight: bold;color: #75818E;'> {{ v_03[2] }} </div></br>
+            <div style='text-align: center;font-size: 18px;line-height: 0.7;color:#05C01E;font-weight: bold;'> GAIN </div></br>
+            <div style='text-align: center;font-size: 95px;line-height: 0.7;white-space: nowrap; color:#05C01E; font-weight: bold;'> {{ v_03[3] }} </div></br>
+            <div style='text-align: center;font-size: 18px;line-height: 0.7;color:#FFD800;font-weight: bold;'> FLAT </div></br>
+            <div style='text-align: center;font-size: 95px;line-height: 0.7;white-space: nowrap; color:#FFD800; font-weight: bold;'> {{ v_03[4] }} </div></br>
+            <div style='text-align: center;font-size: 18px;line-height: 0.7;color:#E41313;font-weight: bold;'> LOSS </div></br>
+            <div style='text-align: center;font-size: 95px;line-height: 0.7;white-space: nowrap; color:#E41313; font-weight: bold;'> {{ v_03[5] }}</div></br>
+         </div>   
+
+        <!-- 4. Top 35 Performing Stocks -->
+        <canvas id="chart_001" class="style_03" width="920" height="520"></canvas>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+            <script> 
+                var chartOne = new Chart(document.getElementById('chart_001').getContext('2d'),
+                               {   type: 'bar',
+                                   data: { labels: {{ v_01[0] | safe }},
+                                           datasets: [{label: 'Gains - {{ v_01[4] }}', 
+                                           data: {{ v_01[1] | safe}},
+                                           backgroundColor: {{ v_01[2] | safe}}, }]
+                                },
+                                options: {
+                                            onClick: function(e){
+                                                var activePoints = chartOne.getElementsAtEvent(e);
+                                                window.open("https://finance.yahoo.com/quote/" + chartOne.data.labels[activePoints[0]._index])
+                                            },
+                                            responsive: false,
+                                            title: { display: true,
+                                                     text: 'Top {{ v_01[3] }} Stocks - Price Adjustment After Earnings Report ({{ v_01[4] }})',
+                                                     fontSize: 26,},
+                                            tooltips: { mode: 'index', intersect: true },
+                                            hover: { mode: 'index', intersect: true },
+                                                scales: {
+                                                        xAxes: [{
+                                                            gridLines: {
+                                                                drawOnChartArea: false
+                                                            }
+                                                        }],
+                                                        yAxes: [{
+                                                            gridLines: {
+                                                                drawOnChartArea: false
+                                                            }
+                                                        }]
+                                                    }
+                                                }
+                                            });
+            </script>
+
+        <label class="style_04" style='font-size: 25px;line-height: 0.7;white-space: nowrap; font-weight: bold;'> Choose a stock </label>
+            
+        <div class="style_05">
+        <h2 style='font-size:20px; color:#75818E;'> {{ v_05 }}, EARNINGS RELEASE ON {{ v_06 }} </h2>
+        </div>
+        
+
+        <form action="" id="stock_select" name="sel" method="post" enctype="multipart/form-data">  
+            <select id="temp" name="get_tickers" class="style_06" style="height: 25px; width: 120px;" onchange="sel.submit()">
+                <option value="1"> {{ v_02[1] }}</option>
+                <option value="2"> {{ v_02[2] }}</option>
+                <option value="3"> {{ v_02[3] }}</option>
+                <option value="4"> {{ v_02[4] }}</option>
+                <option value="5"> {{ v_02[5] }}</option>
+                <option value="6"> {{ v_02[6] }}</option>
+                <option value="7"> {{ v_02[7] }}</option>
+                <option value="8"> {{ v_02[8] }}</option>
+                <option value="9"> {{ v_02[9] }}</option>
+                <option value="10"> {{ v_02[10] }}</option>
+
+                <option value="11"> {{ v_02[11] }}</option>
+                <option value="12"> {{ v_02[12] }}</option>
+                <option value="13"> {{ v_02[13] }}</option>
+                <option value="14"> {{ v_02[14] }}</option>
+                <option value="15"> {{ v_02[15] }}</option>
+                <option value="16"> {{ v_02[16] }}</option>
+                <option value="17"> {{ v_02[17] }}</option>
+                <option value="18"> {{ v_02[18] }}</option>
+                <option value="19"> {{ v_02[19] }}</option>
+                <option value="20"> {{ v_02[20] }}</option>
+
+                <option value="21"> {{ v_02[21] }}</option>
+                <option value="22"> {{ v_02[22] }}</option>
+                <option value="23"> {{ v_02[23] }}</option>
+                <option value="24"> {{ v_02[24] }}</option>
+                <option value="25"> {{ v_02[25] }}</option>
+                <option value="26"> {{ v_02[26] }}</option>
+                <option value="27"> {{ v_02[27] }}</option>
+                <option value="28"> {{ v_02[28] }}</option>
+                <option value="29"> {{ v_02[29] }}</option>
+                <option value="30"> {{ v_02[30] }}</option>
+
+                <option value="31"> {{ v_02[31] }}</option>
+                <option value="32"> {{ v_02[32] }}</option>
+                <option value="33"> {{ v_02[33] }}</option>
+                <option value="34"> {{ v_02[34] }}</option>
+                <option value="35"> {{ v_02[35] }}</option>
+            </select>
+        </form>
+
+
+        <div id="chart_002" style='position: absolute;top: 860px;left: 35px;'></div>
+        <script>
+            var data = [{ x: {{ v_04[0] | safe }},
+                          close: {{ v_04[4] | safe }},
+                          decreasing: {line: {color: '#7F7F7F'}}, 
+                          high: {{ v_04[2] | safe }},
+                          increasing: {line: {color: '#17BECF'}}, 
+                          line: {color: 'rgba(31,119,180,1)'}, 
+                          low: {{ v_04[3] | safe }},
+                          open: {{ v_04[1] | safe }},
+                          type: 'candlestick',
+                          xaxis: 'x',
+                          yaxis: 'y', 
+                        }];
+            var layout = { font: {size: 11}, dragmode: 'zoom', 
+                           margin: {r: 10, t: 25, b: 40, l: 60 }, 
+                           showlegend: false,width: 1000, height:400, 
+                           xaxis: { title: { text: 'Date', 
+                                    font: { family: 'Courier New, monospace', 
+                                            size: 17, color: '#7f7f7f'}, },}, 
+                           yaxis: { title: { text: 'Price', font: { family:'Courier New, monospace',              size: 17, color: '#7f7f7f'} } } };
+            var config = {responsive: true};
+            Plotly.newPlot(document.getElementById('chart_002'), data, layout, config);
+        </script>
+
+        <div style="position: absolute; top: 820px; right: 28px;text-align: center;font-size: 20px;line-height: 0.7;color: #75818E;font-family: Optima;">
+            Live {{ v_05 }} Stock Price
+        </div>
+        
+        <div id="price" style="position: absolute; top: 850px; right: 60px;text-align: center;font-size: 45px;line-height: 0.7;color: #75818E;font-family: Optima;"></div>
+
+        <!-- Add Stocks to Watchlist -->
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <input type="hidden" name="tickers" value={{ v_05 }}>
+            <input type="submit" name="add_watchlist" value="Add to Watchlist" class="style_07" style='position: absolute; font-size: 15px; top: 930px; right: 55px; width: 130px; text-align: center;'/>
+
+        </form>
+
+        <div style="position: absolute; top: 995px; right: 90px;text-align: center;font-size: 20px;line-height: 0.7;color: #75818E;font-family: Optima;">
+
+            CASH
+        </div>
+
+        <div style="position: absolute; top: 1025px; right: 55px;text-align: center;font-size: 45px;line-height: 0.7;color: #75818E;font-family: Optima;">
+
+            {{ v_03[1] }}
+        </div>
+
+        <!-- Place Stocks Order -->
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="tickers" value={{ v_05 }}>
+            <label for="orders" style="position: absolute; top: 1105px; right: 80px;text-align: center;font-size: 20px;line-height: 0.7;color: #75818E;font-family: Optima;"/> SHARES </label>
+            <input type="text" id="count" name="shares" placeholder="0" style='position: absolute; font-size: 25px; top: 1125px; right: 60px; width: 110px; height:80px;text-align: center;'/> <br/>
+            <input type="submit" value="Order Placed" class="style_07" style='position: absolute; font-size: 15px; top: 1215px; right: 48px; width: 136px; text-align: center;'/>
+        </form>
+
+        <!-- Get Current Price -->
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script>
+                setInterval(function(){$.ajax({
+                url: '/update/{{ v_05 }}/',
+                type: 'POST',
+                success: function(response) {
+                    console.log(response);
+                    $("#price").html(response["stock_price"]);
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+                 })}, 5000);
+        </script>
+
+
+    <div style="position: absolute; top: 1350px; right: 28px; border: 0.1px solid green ;">
+    </div>
+
+    </body>
+</html>

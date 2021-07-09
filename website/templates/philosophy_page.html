@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>Investing Done Right.</title>
+        <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <link rel="stylesheet" href="responsive-menu.min.css">
+        <script src="responsive-menu.js"></script>
+    </head>
+
+
+    <style>
+
+        .subtitle { position: absolute; top: 135px; left: 780px; }
+
+        div.box0 { position: absolute; top: 185px; left: 200px; height: 300px; 
+                   width: 600px } 
+
+        div.box1 { position: absolute; top: 680px; left: 260px; width: 560px}
+
+        div.video1 { position: absolute; top: 760px; left: 260px; }
+
+        div.box2 { position: absolute; top: 1325px; left: 260px; width: 560px}
+        div.box3 { position: absolute; top: 1960px; left: 260px; width: 560px}
+        div.video2 { position: absolute; top: 1410px; left: 260px; }
+        div.video3 { position: absolute; top: 2050px; left: 260px; }
+
+        .nav-button { height: 1.5rem; width: 2.2rem; background-color: transparent;
+                      background-image: linear-gradient(to right, currentColor, currentColor);
+                      background-position: center; background-repeat: no-repeat;
+                      background-size: 100% 5px; padding: 0; outline: 0; border: 0;
+                      color: #333; cursor: pointer;
+                      -webkit-tap-highlight-color: transparent;
+                      transition: .25s cubic-bezier(.17,.67,.89,1.4);
+                      transition-property: transform;
+                      will-change: transform;
+                    }
+
+        .nav-button::before,
+
+        .nav-button::after { content: "";
+                             position: absolute;
+                             left: 0; right: 0;
+                             display: block;
+                             height: 5px;
+                             background: currentColor;
+                             transition: .25s;
+                             transition-property: transform, top;
+                             will-change: transform, top;
+                            }
+
+        .nav-button::before { top: 0; }
+        .nav-button::after { top: calc(100% - 4px); }
+
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+
+        .dropdown {
+                    position: absolute; top: 15px; right: 20px;
+                    display: inline-block;
+                  }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 33px; right: 0px;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          text-align:right;
+          font-size: 15px;
+          color: #75818E;font-family: Optima;
+          padding: 8px 3px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .show {display: block;}
+
+    </style>
+
+    <body>  
+
+        <!-- Dropdown Menu -->
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show"); }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.nav-button')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }       
+                    }
+                }
+            }
+        </script>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="nav-button">
+            </button>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/portfolio/None/"> User Home </a>
+                    <a href="/stock_pick_price/"> Stock Picks | $ </a>
+                    <a href="/stock_pick_percentage/"> Stock Picks | % </a>
+                    <a href="/history/"> Historical Data </a>
+                    <a href='/feedback/'> User Feedback </a>
+                    <a href="/accounts/logout/"> Logout </a>
+                </div>
+        </div>
+
+
+        <h1 style='font-size: 80px; text-align: center;' > &#8212; Investing Philosophy &#8212; </h1>
+        
+        <div class="subtitle">
+            <p style='font-size: 15px'> @ Year 2021 Swing Trading Edition. </p>
+        </div>  
+
+
+
+        <div class="box0">
+          <h1 style='font-size: 30px;font-family:Arial; color: #7F7E7E;line-height: 1.4;'> 
+            You’d get very rich if you thought of yourself as having a card with only twenty punches in a lifetime, and every financial decision used up one punch. You’d resist the temptation to dabble. You’d make more good decisions and you’d make more big decisions.
+          </h1>
+        </div>
+          <h1 style='font-size: 25px;font-family:Arial; color: #7F7E7E;line-height: 1.4;position:absolute; top: 500px; left:620px;'> 
+             &#8212; Warren Buffett
+          </h1>
+
+        <div class="box1">
+          <h1 style='font-size: 40px; left: 0px; line-height: 0; color: #7F7E7E;' > Philosophy </h1>
+          <h4 style='font-size: 17px;line-height: 1;color: #7F7E7E;' > &#8212; The reason why we only allow our users to hold at most 5 stocks at once. </h1>
+        </div>
+
+        <div class="box2">
+          <h1 style='font-size: 40px; left: 0px; line-height: 0; color: #7F7E7E;' > Theories </h1>
+          <h4 style='font-size: 17px;line-height: 1;color: #7F7E7E;' > &#8212; The reason why we only recommend post earnings-release stocks. </h1>
+        </div>
+
+        <div class="box3">
+          <h1 style='font-size: 40px; left: 0px; line-height: 0; color: #7F7E7E;' > Testimony </h1>
+          <h4 style='font-size: 17px;line-height: 1;color: #7F7E7E;' > &#8212; Take a look at how Charlie capitalize on trading earnings reports. </h1>
+        </div>
+
+
+        <img src='{{ images }}' style="position: absolute; bottom: -10px; right: 12px; width: 400px; height: 400px;">
+
+        <div class="video1">
+
+          <iframe width="800" height="500" src="https://www.youtube.com/embed/l0Mw8hCzQ1I"frameborder="0" allowfullscreen> </iframe>
+        </div>
+
+        <div class="video2">
+
+          <iframe width="800" height="500" src="https://www.youtube.com/embed/iy3JDc47ddc"frameborder="0" allowfullscreen> </iframe>
+        </div>
+
+        <div class="video3">
+
+          <iframe width="800" height="500" src="https://www.youtube.com/embed/EfHbHHcLLxA"frameborder="0" allowfullscreen> </iframe>
+        </div>
+
+    </body>
+    
+</html>

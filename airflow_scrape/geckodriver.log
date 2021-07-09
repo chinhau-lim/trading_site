@@ -1,0 +1,730 @@
+1622500091151	geckodriver	INFO	Listening on 127.0.0.1:62263
+1622500091185	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofile4vcHtP"
+1622500092885	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1622500096432	Marionette	INFO	Listening on port 62272
+1622500096487	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622500123918	geckodriver	INFO	Listening on 127.0.0.1:62528
+1622500124938	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileQdw6qC"
+1622500126086	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622500129500	Marionette	INFO	Listening on port 62543
+1622500129579	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622500202337	Marionette	INFO	Stopped listening on port 62543
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622500205797	Marionette	INFO	Stopped listening on port 62272
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622500211551	geckodriver	INFO	Listening on 127.0.0.1:63062
+1622500212584	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofile5YMHgV"
+1622500213947	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622500216554	Marionette	INFO	Listening on port 63081
+1622500216635	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=3364161854478349744&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=3364161854478349744&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622500300172	geckodriver	INFO	Listening on 127.0.0.1:63962
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.a9d95a6f716215aafdc3.modern.js, line 2: Error: XMLHttpRequest timeout
+1622500301189	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileZ9fODu"
+1622500302541	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622500306106	Marionette	INFO	Listening on port 63977
+1622500306162	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622500308004	Marionette	INFO	Stopped listening on port 63081
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622500436739	geckodriver	INFO	Listening on 127.0.0.1:64988
+1622500437756	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileezHPT5"
+1622500438788	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622500441171	Marionette	INFO	Stopped listening on port 63977
+1622500441966	Marionette	INFO	Listening on port 65007
+1622500442044	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=16567039219879175115&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=16567039219879175115&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622500708497	Marionette	INFO	Stopped listening on port 65007
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622500711910	geckodriver	INFO	Listening on 127.0.0.1:50469
+1622500712927	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilersZTtH"
+1622500714792	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622500717806	Marionette	INFO	Listening on port 50488
+1622500717918	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622500889417	geckodriver	INFO	Listening on 127.0.0.1:51958
+1622500890441	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofile7oK4s8"
+1622500891571	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622500895116	Marionette	INFO	Stopped listening on port 50488
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622500895642	Marionette	INFO	Listening on port 51973
+1622500895669	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622501066292	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1622501066296	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+1622501948677	geckodriver	INFO	Listening on 127.0.0.1:57982
+1622501949692	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileIVjTgW"
+1622501950743	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622501953564	Marionette	INFO	Listening on port 57997
+1622501953617	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622501958222	Marionette	INFO	Stopped listening on port 51973
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=12551705404830011160&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=12551705404830011160&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=12156420143748241768&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=12156420143748241768&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=8488711937049648769&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=8488711937049648769&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=8689029948657160872&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=8689029948657160872&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=2592653431125177333&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=2592653431125177333&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=13370198301891723640&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=13370198301891723640&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=1018509645100767040&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=1018509645100767040&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=13791907174581740624&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=13791907174581740624&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=17302590846389012857&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=17302590846389012857&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=12460123844119824181&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=12460123844119824181&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+1622502350012	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6536909338640911976&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6536909338640911976&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=4729620643505048066&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=4729620643505048066&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=3311493324479548324&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=3311493324479548324&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622503726391	Marionette	INFO	Stopped listening on port 57997
+1622503732640	geckodriver	INFO	Listening on 127.0.0.1:51492
+1622503733659	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilehCutGt"
+1622503734751	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622503737010	Marionette	INFO	Listening on port 51507
+1622503737118	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1622503891452	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=11132426592175017352&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6700054937255752047&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=11132426592175017352&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6700054937255752047&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622503970225	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622503998482	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6108258419151615931&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6108258419151615931&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622504031999	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=17110355605125534918&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=17110355605125534918&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622504086942	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622504102682	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=14112036060944207590&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+1622504113360	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=14112036060944207590&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622504502537	geckodriver	INFO	Listening on 127.0.0.1:56759
+1622504503556	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileiTAwoL"
+1622504504550	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622504508778	Marionette	INFO	Listening on port 56774
+1622504508854	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622504511188	Marionette	INFO	Stopped listening on port 51507
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_201_3_0/ebStdBanner.js, line 123: NS_ERROR_FAILURE: 
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://s0.2mdn.net/3849093/1614970222907/42099_02_BRK_DecisionTech_InTheMoment_300x250.js, line 23: TypeError: cjs.MovieClip is not a constructor
+JavaScript error: https://s0.2mdn.net/3849093/1614970222907/42099_02_BRK_DecisionTech_InTheMoment_300x250.html, line 24: TypeError: AdobeAn.getComposition is not a function
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6598812452878467867&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6598812452878467867&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622504686464	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622505074859	geckodriver	INFO	Listening on 127.0.0.1:60824
+1622505075878	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileCeZ6rC"
+1622505076867	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622505080890	Marionette	INFO	Listening on port 60839
+1622505080970	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622505238351	geckodriver	INFO	Listening on 127.0.0.1:61849
+1622505239400	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilek73RJO"
+1622505240334	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622505244692	Marionette	INFO	Listening on port 61864
+1622505244765	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5C000D,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622505317957	Marionette	INFO	Stopped listening on port 56774
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622505320931	Marionette	INFO	Stopped listening on port 60839
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622505323083	Marionette	INFO	Stopped listening on port 61864
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622505328659	geckodriver	INFO	Listening on 127.0.0.1:62440
+1622505329678	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileod3uev"
+1622505330509	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622505332747	Marionette	INFO	Listening on port 62455
+1622505332814	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1622505476740	geckodriver	INFO	Listening on 127.0.0.1:63723
+1622505477774	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilekJQ4mk"
+1622505478765	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622505480861	Marionette	INFO	Listening on port 63738
+1622505480915	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1622505500076	geckodriver	INFO	Listening on 127.0.0.1:64102
+1622505501096	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofile2uc5TB"
+1622505501773	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622505503990	Marionette	INFO	Listening on port 64117
+1622505504051	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622505759798	geckodriver	INFO	Listening on 127.0.0.1:49724
+1622505760820	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilejuDTMt"
+1622505761683	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622505764582	Marionette	INFO	Listening on port 49739
+1622505764626	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+[GFX1-]: Managed to allocate after flush.
+JavaScript error: https://fw.adsafeprotected.com/rjss/www.googletagservices.com/558646/51704182/dcm/dcmads.js, line 1003: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6064838629867951447&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=6064838629867951447&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622506869997	geckodriver	INFO	Listening on 127.0.0.1:55986
+1622506871017	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofile5ofVZ8"
+1622506872008	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622506877036	Marionette	INFO	Listening on port 56001
+1622506877147	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622506908204	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622507474317	geckodriver	INFO	Listening on 127.0.0.1:59288
+1622507475337	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilecknd93"
+1622507476342	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622507480688	Marionette	INFO	Listening on port 59303
+1622507480721	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622507527545	Marionette	INFO	Stopped listening on port 64117
+1622507528383	geckodriver	INFO	Listening on 127.0.0.1:60030
+1622507529408	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileADrMOG"
+1622507529662	Marionette	INFO	Stopped listening on port 49739
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622507530955	Marionette	INFO	Marionette enabled
+1622507533513	Marionette	INFO	Stopped listening on port 56001
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622507535214	Marionette	INFO	Listening on port 60058
+1622507535275	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622507535873	Marionette	INFO	Stopped listening on port 59303
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=5203398399276510483&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 132: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10023382647700455424/index.html#t=5203398399276510483&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622509675484	geckodriver	INFO	Listening on 127.0.0.1:53294
+1622509676500	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilefGAhPf"
+1622509677478	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622509680280	Marionette	INFO	Listening on port 53309
+1622509680329	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622509716079	Marionette	INFO	Stopped listening on port 60058
+1622509717914	Marionette	INFO	Stopped listening on port 53309
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622509736213	geckodriver	INFO	Listening on 127.0.0.1:53949
+1622509737233	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileuhiAVD"
+1622509738026	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622509740189	Marionette	INFO	Listening on port 53964
+1622509740272	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://cdn.bannerflow.com/scripts/1.5.27/bf.min.js, line 1: NS_ERROR_UNEXPECTED: 
+1622509910540	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622509938969	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622509947317	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622510102833	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622510144451	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622510248637	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622510279370	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622510292880	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622510343246	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622510349052	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622510380897	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622510544653	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622510682523	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622510697782	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622510741801	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622510759090	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622510794981	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622510975542	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1622510990204	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.a9d95a6f716215aafdc3.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.a9d95a6f716215aafdc3.modern.js, line 2: Error: XMLHttpRequest timeout
+1622514747269	Marionette	INFO	Stopped listening on port 53964
+1622905784699	geckodriver	INFO	Listening on 127.0.0.1:53720
+1622905785726	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileXbMJzX"
+1622905787332	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622905790343	Marionette	INFO	Listening on port 53735
+1622905790442	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622905839386	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1622905861398	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622905872174	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1622905943643	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://ad4m.at/r62eglto.js, line 1: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://cdn.rvty.net/_files/js/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1622905959657	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://cdn.rvty.net/_files/js/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1622906045029	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://s0.2mdn.net/9506911/1605077017618/index.html, line 186: TypeError: a.a is null
+JavaScript error: https://s0.2mdn.net/9506911/1605077017618/index.html, line 305: TypeError: studio.Enabler is undefined
+JavaScript error: https://s0.2mdn.net/9506911/1605077017618/index.html, line 200: TypeError: this.a is null
+JavaScript warning: https://cdn.rvty.net/_files/js/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1622906109656	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=10988412064700245167&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=10988412064700245167&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+1622906138938	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=15834225488352995032&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=15834225488352995032&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=13753639105126671420&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13550285348793221120/index.html#t=13753639105126671420&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript warning: https://cdn.rvty.net/_files/js/jquery-1.10.2.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1622906182071	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622906409222	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://s0.2mdn.net/sadbundle/15506558336121161160/index.html, line 150: TypeError: a.g is null
+JavaScript error: https://s0.2mdn.net/sadbundle/15506558336121161160/index.html, line 165: TypeError: this.g is null
+1622907317785	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622907436968	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+1622907561052	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622907578541	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622907816195	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s0.2mdn.net/sadbundle/10977663467497979904/index.html, line 155: TypeError: a.a is null
+JavaScript error: https://s0.2mdn.net/sadbundle/10977663467497979904/index.html, line 170: TypeError: this.a is null
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+1622913113310	geckodriver	INFO	Listening on 127.0.0.1:61756
+1622913114329	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilefcqasF"
+1622913115654	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622913119063	Marionette	INFO	Listening on port 61767
+1622913119096	Marionette	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1622913150570	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+1622913235662	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913249427	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622913260292	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913279712	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913279717	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913279731	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+1622913322342	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913322343	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913322355	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913322484	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913322486	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913322486	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913322492	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913333799	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+1622913347324	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913356611	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+1622913420246	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+JavaScript error: https://s.yimg.com/rq/darla/4-8-0/js/sfext-min.js, line 2: TypeError: right-hand side of 'in' should be an object, got null
+1622913428604	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/15398077775290040320/index.html#t=14907704622962310412&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/15398077775290040320/index.html#t=14907704622962310412&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12502976385620377600/index.html#t=645109923657842416&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12502976385620377600/index.html#t=645109923657842416&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13064758606153383936/index.html#t=12775167073288592789&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+1622913533564	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13064758606153383936/index.html#t=12775167073288592789&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13064758606153383936/index.html#t=16839442264167441337&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13064758606153383936/index.html#t=16839442264167441337&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/15398077775290040320/index.html#t=14702075787079018523&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/15398077775290040320/index.html#t=14702075787079018523&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10119325630760747008/index.html#t=16261308840755343376&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10119325630760747008/index.html#t=16261308840755343376&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12502976385620377600/index.html#t=3733416527649518283&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12502976385620377600/index.html#t=3733416527649518283&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10119325630760747008/index.html#t=4395281975998373913&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13064758606153383936/index.html#t=4250496532742101020&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10119325630760747008/index.html#t=4395281975998373913&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13064758606153383936/index.html#t=4250496532742101020&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+1622913702788	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913709913	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913731214	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12502976385620377600/index.html#t=11787934117338314228&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/15398077775290040320/index.html#t=8527427964557815042&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12502976385620377600/index.html#t=11787934117338314228&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/15398077775290040320/index.html#t=8527427964557815042&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13064758606153383936/index.html#t=1466917741749242035&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13064758606153383936/index.html#t=1466917741749242035&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+1622913779916	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10119325630760747008/index.html#t=2569914041328982009&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/10119325630760747008/index.html#t=2569914041328982009&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+1622913863524	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913950545	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622913960340	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622914007577	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/7048895391076450304/index.html#t=17374904348182627092&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/9578229531798405120/index.html#t=18221455928721989045&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/9578229531798405120/index.html#t=18221455928721989045&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622914251190	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/9578229531798405120/index.html#t=9771637673303340756&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/9578229531798405120/index.html#t=9771637673303340756&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/7048895391076450304/index.html#t=315210045958250468&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/7048895391076450304/index.html#t=315210045958250468&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/9578229531798405120/index.html#t=15183164696308811478&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/9578229531798405120/index.html#t=15183164696308811478&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622914610771	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622914681036	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+1622914838138	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/8434489322867077712/index.html#t=10298802418721092080&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 891: TypeError: itemBg is null
+1622914906502	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 60644, MediaDecoderStateMachine #1] WARNING: Decoder=16168d400 Decode error: NS_ERROR_UNEXPECTED (0x8000ffff) - Expected Planar YCbCr image in RemoteVideoDecoderParent::ProcessDecodedData: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3478
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20210526_RC00/outstream.min.js, line 627: This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: NS_ERROR_UNEXPECTED (0x8000ffff) - Expected Planar YCbCr image in RemoteVideoDecoderParent::ProcessDecodedData
+1622914944865	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622914966778	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/9578229531798405120/index.html#t=11775580748804179742&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/9578229531798405120/index.html#t=11775580748804179742&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: uncaught exception: undefined
+1622915135852	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+1622915152353	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622915159133	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20210526_RC00/outstream.min.js, line 627: This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: 
+1622915313725	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 60644, MediaDecoderStateMachine #1] WARNING: Decoder=160d54c00 Decode error: NS_ERROR_UNEXPECTED (0x8000ffff) - Expected Planar YCbCr image in RemoteVideoDecoderParent::ProcessDecodedData: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3478
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20210526_RC00/outstream.min.js, line 627: This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: Failed to decode media
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 60644, MediaDecoderStateMachine #1] WARNING: Decoder=15945cc00 Decode error: NS_ERROR_UNEXPECTED (0x8000ffff) - Expected Planar YCbCr image in RemoteVideoDecoderParent::ProcessDecodedData: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3478
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20210526_RC00/outstream.min.js, line 627: This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: NS_ERROR_UNEXPECTED (0x8000ffff) - Expected Planar YCbCr image in RemoteVideoDecoderParent::ProcessDecodedData
+JavaScript error: , line 0: uncaught exception: undefined
+1622915672640	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/7048895391076450304/index.html#t=18084709222125828235&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/7048895391076450304/index.html#t=18084709222125828235&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622915886710	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622915924921	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 60644, MediaDecoderStateMachine #1] WARNING: Decoder=1617c5c00 Decode error: NS_ERROR_UNEXPECTED (0x8000ffff) - Expected Planar YCbCr image in RemoteVideoDecoderParent::ProcessDecodedData: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3478
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20210526_RC00/outstream.min.js, line 627: This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: NS_ERROR_UNEXPECTED (0x8000ffff) - Expected Planar YCbCr image in RemoteVideoDecoderParent::ProcessDecodedData
+JavaScript error: , line 0: uncaught exception: undefined
+1622916037704	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622916069710	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622916082450	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+1622916160551	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1622916216248	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/3694782093339918336/index.html#t=15641377491813332261&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/3694782093339918336/index.html#t=15641377491813332261&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/7048895391076450304/index.html#t=1870504063168452392&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/7048895391076450304/index.html#t=1870504063168452392&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1622916388404	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: , line 0: NotFoundError: Could not move source file(/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofileXbMJzX/bookmarkbackups/bookmarks-2021-06-09_11_-WX9KTScSC+HMaiWzgA7ZA==.jsonlz4) because it does not exist
+JavaScript error: , line 0: NotFoundError: Could not move source file(/var/folders/m6/kt5rk3ns35d4rcq_2rvgfpwc0000gn/T/rust_mozprofilefcqasF/bookmarkbackups/bookmarks-2021-06-09_11_RQAQFHqzHJsJ5dMsjVKz8Q==.jsonlz4) because it does not exist
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/vendor.32158d29d7ade1045e9b.modern.js, line 2: Error: XMLHttpRequest timeout
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 315: InvalidStateError: JSWindowActorChild.contentWindow getter: Cannot access property 'contentWindow' after actor 'PictureInPictureToggle' has been destroyed
+JavaScript error: , line 0: uncaught exception: null
+1623414490697	Marionette	INFO	Stopped listening on port 61767
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: uncaught exception: null
+1623414495306	Marionette	INFO	Stopped listening on port 53735
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

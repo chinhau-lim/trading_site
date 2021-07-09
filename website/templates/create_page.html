@@ -1,0 +1,161 @@
+        <html>
+        <head>
+            <title>Investing Done Right.</title>
+            <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js" type="text/javascript"></script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+            <link rel="stylesheet" href="responsive-menu.min.css">
+            <script src="responsive-menu.js"></script>
+        </head>
+        <style>
+            form  { display: table;      }
+            p     { display: table-row;  }
+            label { display: table-cell; font-size: 1.6vw; }
+            input { display: table-cell; font-size: 1.3vw; }
+
+            .nav-button { height: 2.0rem; width: 3.0rem; background-color: transparent;
+                  background-image: linear-gradient(to right, currentColor, currentColor);
+                  background-position: center; background-repeat: no-repeat;
+                  background-size: 100% 5px; padding: 0; outline: 0; border: 0;
+                  color: #333; cursor: pointer;
+                  -webkit-tap-highlight-color: transparent;
+                  transition: .25s cubic-bezier(.17,.67,.89,1.4);
+                  transition-property: transform;
+                  will-change: transform;
+                }
+
+            .nav-button::before,
+
+            .nav-button::after { content: "";
+                                 position: absolute;
+                                 left: 0; right: 0;
+                                 display: block;
+                                 height: 5px;
+                                 background: currentColor;
+                                 transition: .25s;
+                                 transition-property: transform, top;
+                                 will-change: transform, top;
+                                }
+
+            .nav-button::before { top: 0; }
+            .nav-button::after { top: calc(100% - 4px); }
+
+            .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+            .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+    
+            .dropdown {
+                        position: absolute; top: 15px; right: 20px;
+                        display: inline-block;
+                      }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              top: 33px; right: 0px;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+              color: black;
+              text-align:right;
+              font-size: 15px;
+              color: #75818E;font-family: Optima;
+              padding: 8px 3px;
+              text-decoration: none;
+              display: block;
+            }
+
+            /* Change color of dropdown links on hover */
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {display: block;}
+
+            /* Change the background color of the dropdown button when the dropdown content is shown */
+            .show {display: block;}
+
+        </style>
+
+        <body>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% for category, message in messages %} 
+                <div class="alert alert-{{ category }}">
+                    {{message}}
+                </div>
+                {% endfor %}
+            {% endwith %}
+
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show"); }
+
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.nav-button')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }       
+                        }
+                    }
+                }
+            </script>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="nav-button">
+                </button>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/philosophy/"> Philosophy </a>
+                    <a href="/accounts/login/"> Login </a>
+                </div>
+            </div>
+
+            <img src='{{ logo }}' alt = 'logo' style="width:120px; height:120px;
+            position:absolute; top:40px; left:50px; 
+            vertical-align: middle; float: left;">
+
+            <h1 style="text-align: right; font-weight: bold; font-size:
+            2.2vw; padding-top: 1.0vw; white-space: pre;">
+            &nbsp;
+            </h1>
+
+            
+            <br/>
+            <br/>
+
+            <form action="" method="post" enctype="multipart/form-data" 
+            style="position:absolute; top:200px; left:200px;">
+                <p> <label>  Username  &nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="username" />  </p> <br/>
+
+                <p> <label>  Password  &nbsp;&nbsp;&nbsp;</label>
+                <input type="password" name="password" />  </p> <br/>
+
+                <p> <label>  Email     &nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="email" />  </p> <br/>
+
+                <p> <label>  Age  &nbsp;&nbsp;&nbsp;</label>
+                <input type="age" name="age" />  </p> <br/>
+
+                <p> <label>  Years of Experience &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="exp" name="exp" />  </p> <br/>
+
+                <input type="submit" name="signup" value="sign up"/> <br/><br/>
+
+                <a href="/accounts/login/"> Have an account? <b> Log in </b> </a>
+            </form>
+        </body>
+        </html>

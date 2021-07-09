@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Investing Done Right.</title>
+         <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js" type="text/javascript"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+            <link rel="stylesheet" href="responsive-menu.min.css">
+            <script src="responsive-menu.js"></script>
+
+    </head>
+
+    <style>
+        
+        div.style_00 { position: absolute; top: 10px; left: 380px; }
+        div.style_01 { position: absolute; top: 105px; left: 640px; }
+        div.style_02 { position:absolute; top:150px; right:25px; height:570px; width:210px;
+                       box-shadow: rgba(100, 100, 111, 0.5) 0px 17px 59px 0px;}
+        select.style_03 { position: absolute; top: 625px; left: 300px; height: 120px; width: 120px;}
+
+        input.style_04  {   -webkit-box-shadow: inset 0 9px 12px rgba(0, 0, 0, 0.25),
+                            0 1px 2px rgba(0, 0, 0, 0.05);
+                            -moz-box-shadow: inset 0 9px 12px rgba(0, 0, 0, 0.25),
+                            0 1px 2px rgba(0, 0, 0, 0.05);
+                            box-shadow: inset 0 9px 12px rgba(0, 0, 0, 0.25),
+                            0 1px 2px rgba(0, 0, 0, 0.05); 
+                        }
+
+        select.style_05 { position: absolute; top: 1116px; right: 70px; height: 50px; width: 220px;}
+
+        .nav-button { height: 1.5rem; width: 2.2rem; background-color: transparent;
+                      background-image: linear-gradient(to right, currentColor, currentColor);
+                      background-position: center; background-repeat: no-repeat;
+                      background-size: 100% 5px; padding: 0; outline: 0; border: 0;
+                      color: #333; cursor: pointer;
+                      -webkit-tap-highlight-color: transparent;
+                      transition: .25s cubic-bezier(.17,.67,.89,1.4);
+                      transition-property: transform;
+                      will-change: transform;
+                    }
+
+        .nav-button::before,
+
+        .nav-button::after { content: "";
+                             position: absolute;
+                             left: 0; right: 0;
+                             display: block;
+                             height: 5px;
+                             background: currentColor;
+                             transition: .25s;
+                             transition-property: transform, top;
+                             will-change: transform, top;
+                            }
+
+        .nav-button::before { top: 0; }
+        .nav-button::after { top: calc(100% - 4px); }
+
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+        .nav-button:hover, .nav-button:focus { background-color: #FFFFFF;}
+
+        .dropdown {
+                    position: absolute; top: 15px; right: 20px;
+                    display: inline-block;
+                  }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 33px; right: 0px;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          text-align:right;
+          font-size: 15px;
+          color: #75818E;font-family: Optima;
+          padding: 8px 3px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .show {display: block;}
+
+
+
+
+        table.datagrid { border-collapse: collapse; }
+
+        table.datagrid thead tr th {
+            color: #949494;
+            font-size: 15px;
+            font-weight: normal;
+            text-align: center;
+            padding: 6px 8px;
+            border: 1px solid #c9c9c9;
+            background-image: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+            background-image: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+            background-image: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+        }
+
+        table.datagrid tbody tr {
+            background: #fff;
+        }
+
+        table.datagrid tbody tr td {
+            padding: 6px 8px;
+            border: 1px solid #c9c9c9;
+        }
+
+
+        table.datagrid tbody tr td.cash {
+            text-align: right;
+        }
+
+
+
+        .table-scroll{
+            /*width:100%; */
+            display: block;
+            empty-cells: show;
+            table-layout:fixed;
+  
+            /* Decoration */
+            border-spacing: 1px;
+            width: 220px;
+            height: 280px;
+            border: 1px solid;
+
+            position: absolute;
+            top: 830px; right: 70px;
+        }
+
+        .table-scroll thead{
+          background-color: #f1f1f1;  
+          position:relative;
+          display: block;
+          text-align: center;
+          width:216px;
+          overflow-y: scroll;
+        }
+
+        .table-scroll tbody{
+          /* Position */
+          display: block; position:relative;
+          width:220px; overflow-y:scroll;
+          height: 220px;
+          /* Decoration */
+          text-align:center;
+          border-top: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .table-scroll tr{
+          width: 220px;
+          display:flex;
+          text-align:center;
+        }
+
+        .table-scroll td,.table-scroll th{
+          flex-basis:100%;
+          flex-grow:2;
+          display: block;
+          padding: 1rem;
+          text-align:center;
+        }
+
+        td.v0 {
+            color: #75818E;
+        }
+        td.v1 {
+            color: green;
+        }
+
+        td.v2 {
+            color: red;
+        }
+        /* Other options */
+
+        .table-scroll.small-first-col td:first-child,
+        .table-scroll.small-first-col th:first-child{
+          flex-basis:20%;
+          flex-grow:1;
+          text-align:center;
+        }
+
+        .table-scroll tbody tr:nth-child(2n){
+          background-color: rgba(130,130,170,0.1);
+          text-align:center;
+        }
+
+        .body-half-screen{ max-height: 70vh; }
+
+        .small-col{flex-basis:10%; text-align:center;}
+
+
+        .table-scroll2{
+            /*width:100%; */
+            display: block;
+            empty-cells: show;
+            table-layout:fixed;
+  
+            /* Decoration */
+            border-spacing: 1px;
+            width: 1100px;
+            height: 600px;
+
+            position: absolute;
+            top: 1320px; left: 100px;
+        }
+
+        .table-scroll2 tbody{
+          /* Position */
+          display: block; position:relative;
+          width:1100px; overflow-y:scroll;
+          height: 600px;
+          /* Decoration */
+          text-align:center;
+          border-top: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .table-scroll2 tr{
+          width: 100s0px;
+          display:flex;
+          text-align:center;
+        }
+
+        .table-scroll2 td,.table-scroll2 th{
+          flex-basis:100%;
+          flex-grow:2;
+          display: block;
+          padding: 1rem;
+          text-align:center;
+        }
+
+        .table-scroll2.small-first-col td:first-child,
+        .table-scroll2.small-first-col th:first-child{
+          flex-basis:20%;
+          flex-grow:1;
+          text-align:center;
+        }
+
+        .table-scroll2 tbody tr:nth-child(2n){
+          background-color: rgba(130,130,170,0.1);
+          text-align:center;
+        }
+
+
+    </style>
+
+    <body>
+
+        <!-- 1. Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %} 
+            <div class="alert alert-{{ category }}">
+                {{message}}
+            </div>
+            {% endfor %}
+        {% endwith %}
+
+        <!-- 1. Navigation Function -->
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show"); }
+
+                window.onclick = function(event) {
+                    if (!event.target.matches('.nav-button')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }       
+                    }
+                }
+            }
+        </script>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="nav-button">
+            </button>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/stock_pick_price/"> Stock Picks | $ </a>
+                    <a href="/stock_pick_percentage/"> Stock Picks | % </a>
+                    <a href="/history/"> Historical Data </a>
+                    <a href="/philosophy/"> Philosophy </a>
+                    <a href='/feedback/'> User Feedback </a>
+                    <a href="/accounts/logout/"> Logout </a>
+                </div>
+        </div>
+
+        <!-- 2. Title -->
+        <div class="style_00">
+            
+            <h1 style='font-size:60px; text-align:center;'> &#8212; User's Portfolio &#8212; </h1>
+        </div>
+        <div class="style_01">
+
+            <p style='font-size: 15px'> @ Year 2021 Swing Trading Edition. </p>
+        </div>
+
+        
+        <!-- 3. Personal Stats -->
+        <div class="style_02">
+            </br>
+            <h1 style='text-align: center; font-size: 28px; color: #75818E;'> 
+            &#8212; STATS &#8212; </h1>
+                </br>
+            <div style='text-align: center;font-size: 22px;line-height: 0.7;color: #75818E;'> Total Earnings</div></br>
+            <div style='text-align: center;font-size: 40px;line-height: 0.7;font-weight: bold;color: #75818E;'> {{ v_01[2] }} </div></br>
+            <div style='text-align: center;font-size: 18px;line-height: 0.7;color:#05C01E;font-weight: bold;'> GAIN </div></br>
+            <div style='text-align: center;font-size: 95px;line-height: 0.7;white-space: nowrap; color:#05C01E; font-weight: bold;'> {{ v_01[3] }} </div></br>
+            <div style='text-align: center;font-size: 18px;line-height: 0.7;color:#FFD800;font-weight: bold;'> FLAT </div></br>
+            <div style='text-align: center;font-size: 95px;line-height: 0.7;white-space: nowrap; color:#FFD800; font-weight: bold;'> {{ v_01[4] }} </div></br>
+            <div style='text-align: center;font-size: 18px;line-height: 0.7;color:#E41313;font-weight: bold;'> LOSS </div></br>
+            <div style='text-align: center;font-size: 95px;line-height: 0.7;white-space: nowrap; color:#E41313; font-weight: bold;'> {{ v_01[5] }}</div></br>
+         </div>   
+
+        <!-- 4A. Purchased Stocks Table -->
+        <table class="datagrid" style="position: absolute; top: 185px; left: 90px;">
+            <thead>
+                <tr>
+                    <th width="200px" height="60px" style="font-size: 18px;"> Tickers </th>
+                    <th width="200px" style="font-size: 18px;"> Shares </th>
+                    <th width="200px" style="font-size: 18px;"> Average Cost </th>
+                    <th width="200px" style="font-size: 18px;"> Total Return </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for stocks in v_03 %}
+                <tr>
+                    <td height="60px" style="font-size:22px; text-align: center; color:#75818E;"> {{ stocks[0] }} </td>
+                    <td height="60px" style="font-size:22px; text-align: center; color:#75818E;"> {{ stocks[1] }} </td>
+                    <td height="60px" style="font-size:22px; text-align: center; color:#75818E;"> {{ stocks[2] }} </td>
+                    <td height="60px" class="{{ stocks[4]}}" style="font-size:22px; text-align: center;font-weight: bold;"> {{ stocks[3] }} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- 4B. OPTIONS CHOICE -->
+        <form action=""  method="post" enctype="multipart/form-data">  
+            <select id="temp" name="sell_stocks" class="style_03" style="height: 50px; width: 300px; font-size: 15px;text-align: center;">
+                {% for stocks in v_03 %}
+                    <option value="{{ stocks[0] }}"> {{ stocks[0] }} </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="SELL" class="style_04" style='position: absolute; font-size: 18px; top: 625px; right: 550px; width: 116px; height: 50px; text-align: center;'/>
+        </form>
+
+        <!-- 5. CHART --> 
+        <h1 style='font-size:22px; color:RGBA(112, 123, 124, 0.75); position: absolute; top: 715px; left: 128px;'> {{ v_04[0] }} </h1>
+        <h1 style='font-size:50px; color:RGBA(112, 123, 124, 0.75); position: absolute; top: 730px; left: 120px;'> {{ v_04[1] }} </h1>
+
+        <div id="chart_002" style='position: absolute;top: 820px;left: 85px;'></div>
+        <script>
+            var data = [{ x: {{ v_02[0] | safe }},
+                          close: {{ v_02[4] | safe }},
+                          decreasing: {line: {color: '#7F7F7F'}}, 
+                          high: {{ v_02[2] | safe }},
+                          increasing: {line: {color: '#17BECF'}}, 
+                          line: {color: 'rgba(31,119,180,1)'}, 
+                          low: {{ v_02[3] | safe }},
+                          open: {{ v_02[1] | safe }},
+                          type: 'candlestick',
+                          xaxis: 'x',
+                          yaxis: 'y', 
+                        }];
+            var layout = { font: {size: 11}, dragmode: 'zoom', 
+                           margin: {r: 10, t: 25, b: 40, l: 60 }, 
+                           showlegend: false,width: 800, height:400, 
+                           xaxis: { title: { text: 'Date', 
+                                    font: { family: 'Courier New, monospace', 
+                                            size: 17, color: '#7f7f7f'}, },}, 
+                           yaxis: { title: { text: 'Price', font: { family:'Courier New, monospace',              size: 17, color: '#7f7f7f'} } } };
+            var config = {responsive: true};
+            Plotly.newPlot(document.getElementById('chart_002'), data, layout, config);
+        </script>
+
+        <h1 style="position: absolute; top: 760px; right: 80px;">  &#8212; Watchlist 
+        &#8212; </h1>
+
+
+
+    <!--style=" top: 830px; right: 70px; height: 20px;overflow: scroll;" -->
+
+    <table class="table-scroll small-first-col">
+        <thead>
+            <tr>
+                <th style="text-align: center;">Stocks</th>
+                <th style="text-align: center;">Price</th>
+            </tr>
+        </thead>
+        <tbody class="body-half-screen">
+            {% for wl in v_05 %}
+                <tr>
+                    <td style="text-align: center;" > <a href = '/portfolio/{{ wl[0] }}/' style="text-decoration: none">{{ wl[0] }} </a></td>
+                    <td style="text-align: center;"> $ {{ wl[1] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1 style='font-size:33px; color:RGBA(112, 123, 124, 0.75); position: absolute; top: 1260px; left: 115px;'> {{ v_04[0] }} News </h1>
+
+    <table class="table-scroll2 small-first-col">
+        <tbody class="body-half-screen">
+            {% for news in v_06 %}
+                <tr>
+                    <td style="text-align: center;" > 
+
+                        <h1 style="font-size:20px; text-align:left; line-height: 0.8;"> <a href = {{ news[1] }} target="_blank" rel="noopener noreferrer">{{ news[0] }} </a></h1>
+
+                        <h5 style="font-size:13px; opacity: 0.7;text-align:left; line-height: 1.2;"> 
+                            {{ news[2]}}
+                        </h5>
+
+                        <h5 style="font-size:16px; text-align:left;line-height: 1.2;opacity: 0.7;font-family: Optima, sans-serif;"> 
+                            {{ news[3]}}
+                        </h5>
+
+                    </td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+        
+
+    <h1 style="position: absolute; top: 1800px; opacity: 0; "> Hello </h1>
+
+        <!-- Dynamic Options -->
+        <form action=""  method="post" name="watch" enctype="multipart/form-data">  
+            <select id="temp" name="remove-watchlist" class="style_05" style="font-size: 15px;text-align: center;" onchange="watch.submit()">
+                <option value=""> Remove from Watchlist </option>
+                {% for wl in v_05 %}
+                    <option value={{ wl[0] }} > {{ wl[0] }} </option>
+                {% endfor %}
+            </select>
+        </form>
+
+    </body>
+
+</html>
