@@ -7,8 +7,25 @@ Here's a stock simulator that recommend stocks for users on a daily basis implem
 
 ### Demo 
 
-[![Website_Demo](demo.png)](https://player.vimeo.com/video/572867091)
+[![Website_Demo](demo.png)](https://vimeo.com/572867091)
 
-### New to investing? Fed up with manual stock screening process? Check out the stock simulator that I've built to help people get comfortable with investing using virtual currency. And, yes, it picks stocks for you on a daily basis too! 
+### Built With
+  - Python, Flask, SQL
+  - Javascript, HTML
+  - Chart.js, Plotly
+  - Yahoo Finance API
+
+### Database Schema
+
+  - 9 Tables:
+    - Users Table
+      - name, password (hashed with hashlib sha512), email, age, exp, created.   
+    - Users_Finance Table
+    - Users_Historical Table
+    - Users_Current Table
+    - Users_Feedback Table
+    - Users_Watchlist Table
+    - Historical_Data Table
+    - Feedback_Upvotes Table  
 
 
